@@ -1,0 +1,98 @@
+#chessboard-container{
+    justify-content: center; 
+    align-items: center;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+.square{
+    width: 40px;
+    height: 40px;
+}
+
+/* .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+} */
+
+#move-button-container{
+    align-items: center;
+    justify-content: center;
+}
+#startbtn{
+    border-radius: 40px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+#moveUbtn{
+    width: 50px;
+    height: 25px;
+    font-size: 20px;
+}
+#moveDbtn{
+    width: 50px;
+    height: 25px;
+    font-size: 20px;
+}
+#moveLbtn{
+    width: 50px;
+    height: 25px;
+    font-size: 20px;
+}
+#moveRbtn{
+    width: 50px;
+    height: 25px;
+    font-size: 20px;
+}
+#startbtn:hover{
+    background-color: gray;
+    color: white;
+}
+
+#switchbtn{
+    border-radius: 40px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+#switchbtn:hover{
+    background-color: gray;
+    color: white;
+}
+.square svg{
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    position: relative;
+    z-index: -1;
+}
+path{
+    position:relative;
+    z-index: -2;
+}
+.piece{
+    position:relative;
+    z-index: 2;            /* puts the pieces in front always allowing to interact with pieces instead of the squares */
+}
+.white{
+    background-color: rgb(220, 220, 220); 
+}
+.black{
+    background-color: rgb(170, 170, 170); 
+}
+
+.blackpieces {
+    fill: rgb(28,28,28); 
+    stroke: white;
+    stroke-width: 10px;
+}
+.whitepieces {
+    fill: rgb(255,255,255); 
+    stroke: black;
+    stroke-width: 10px;
+}

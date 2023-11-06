@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chessboard</title>
+    <link rel = "stylesheet" href = "{% static 'chess_app/style.css' %}">
+    <navbar >
+        <div>
+            <!-- <button id="startbtn" onclick="draw_chessboard()">Start</button>
+            <button id="switchbtn" onclick="switch_chessboard()">Switch</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="addsize" onclick="addsize()">+</button>
+            <button id="minussize" onclick="minussize()">-</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="clearbtn" onclick="clearAll()">Reload</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="woodenbtn" onclick = "wooden_color()">Wooden</button>
+            <button id="classicbtn" onclick = "classic_color()">Classic</button>
+            <button id="tournamentbtn" onclick = "tournament_color()">Tournament</button> -->
+            <!-- <button id="trybtn" onclick = "trybtn()">Trylang</button> -->
+        </div>
+    </navbar>
+
+    <br>
+    <br>
+    <!-- <div id = "move-button-container">
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="moveUbtn" onclick="moveUp()"><img id="arrowUpIcon" src="" alt="Up"></button></div>
+        <button id="moveLbtn" onclick="moveLeft()"><img id="arrowLeftIcon" src="" alt="Left"></button><button id="moveRbtn" onclick="moveRight()"><img id="arrowRightIcon" src="" alt="Right"></button>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="moveDbtn" onclick="moveDown()"><img id="arrowDownIcon" src="" alt="Down"></button></div>
+    </div>
+    <br>
+    <button id="smallbtn" onclick="sbtn()">small</button>
+    <button id="mediumbtn" onclick="mbtn()">medium</button>
+    <button id="bigbtn" onclick="bbtn()">big</button> -->
+</head>
+<body>
+    <center><div id = "chessboard-container"> <!-- <canvas id="myCanvas" width="1000" height="800"></canvas>  --></div></center>
+    <script src="{% static 'chess_app/app.js' %}"></script>
+    <script src="{% static 'chess_app/pieces.js' %}"></script>
+    </div>
+</body>
+</html>
